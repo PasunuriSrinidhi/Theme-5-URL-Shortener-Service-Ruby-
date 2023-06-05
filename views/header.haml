@@ -1,0 +1,7 @@
+- if @flash
+  - if @flash[:error]
+    %div(id="error" class="flash rounded")
+      %div(class="overflow")= @flash[:error]
+  - if @flash[:notice]
+    %div(id="notice" class="flash rounded")
+      %div(class="overflow")= @flash[:notice]

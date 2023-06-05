@@ -1,0 +1,133 @@
+/* ###################################### */
+/* Setup a few vars.                      */
+/* ###################################### */
+$theme-color: #666;
+$highlight-color: #EEE;
+$notice-color: #333;
+$error-color: red;
+$button-background: #222;
+$button-background-hover: #333;
+$link-color: orange;
+$background-color: black;
+$text-color: white;
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+
+  img#logo {
+    border: 0;
+    max-width: 100%;
+  }
+
+  div#content {
+    margin: auto;
+    max-width: 400px;
+    text-align: center;
+    
+    div#form_inputs {
+      text-align: center;
+    }
+    
+    a:link {
+      text-decoration: none;
+      color: $link-color;
+    }
+      
+    a:visited {
+      color: $link-color;
+    }
+    
+    a:hover { 
+      color: $highlight-color;
+    }
+    
+    a:active {
+      color: $highlight-color;
+    }
+    
+    #footer {
+      color: $theme-color;
+      padding-top: 12px;
+      clear: both;
+    }
+
+    div#error {
+      background-color: $error-color;
+    }
+
+    div#notice {
+      background-color: $notice-color;
+    }
+    
+    div.flash {
+      margin: 0 auto 5px;
+      padding: 5px 10px;
+      width: 90%;
+    }
+    
+    div#clip_container {
+      margin-top: 8px;
+    }
+
+    div#clip_button {
+      cursor: pointer;
+    }
+    
+    div#clip_button.hover, div#clip_button.active {
+        color: $highlight-color;
+        cursor: pointer;
+    }
+    
+    div.overflow {
+      overflow: hidden;
+    }
+
+    .rounded {
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -khtml-border-radius: 5px;
+      border-radius: 5px;
+    }
+    
+    input#url {
+      margin: 10px 0 0;
+      width: 388px;
+      max-width: 90%;
+      padding: 5px;
+      color: $theme-color;
+      font-size: 24px;
+      border: 1px solid $highlight-color;
+    }
+    
+    input#submit {
+      font-weight: bold;
+      padding: 4px 15px;
+      margin: 12px 0 0;
+      font-size: 16px;
+      border: 1px solid $theme-color;
+      background-color: $button-background;
+      color: white;
+    }
+    
+    input#submit:hover {
+      background-color: $button-background-hover;
+    }
+    
+    #shortened_url {
+      margin: 10px 0 0;
+      width: 100%;
+      display: block;
+      color: $theme-color;
+      font-size: 24px;
+    }
+    
+    #copy_to_clipboard {
+      margin: 10px 0 0;
+      width: 100%;
+      display: block;
+      color: $theme-color;
+      font-size: 22px;
+    }
+  }
+}
